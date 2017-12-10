@@ -1,0 +1,25 @@
+type project
+title
+    ElasticsearchTypeProvider
+owners
+    Olga Rocheeva
+authors 
+    Olga Rocheeva
+projectUrl
+    https://github.com/olgarose/ElasticsearchTypeProvider
+iconUrl
+    https://raw.githubusercontent.com/olgarose/ElasticsearchTypeProvider/master/docs/files/img/logo.png
+licenseUrl
+    https://github.com/olgarose/ElasticsearchTypeProvider/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    Elasticsearch F# type provider Nest AWS
+summary
+    Elasticsearch Type Provider
+description
+    Elasticsearch Type Provider simplifies F# access to Elasticsearch. It ships with F# friendly types (wrapping Nest Query DSL) and generates domain types (F# records) based on Elasticsearch metadata.
+
+
