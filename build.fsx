@@ -215,12 +215,10 @@ Target "ReleaseDocs" (fun _ ->
     Git.CommandHelper.runSimpleGitCommand tempDocsDir "rm . -f -r" |> ignore
     CopyRecursive "docs" tempDocsDir true |> tracefn "%A"
 
-    //File.WriteAllText("temp/gh-pages/latest",sprintf "https://github.com/fsprojects/Paket/releases/download/%s/paket.exe" release.NugetVersion)
-    //File.WriteAllText("temp/gh-pages/stable",sprintf "https://github.com/fsprojects/Paket/releases/download/%s/paket.exe" stable.NugetVersion)
-
     StageAll tempDocsDir
     Git.Commit.Commit tempDocsDir (sprintf "Update generated documentation for version %s" release.NugetVersion)
-    //Branches.push tempDocsDir
+    Branches.push tempDocsDir
+    CleanDir tempDocsDir
 )
 
 Target "GenerateReferenceDocs" (fun _ ->
@@ -387,6 +385,7 @@ Target "All" DoNothing
   ==> "Release"
 
 "ReleaseDocs"
+  ==> "Build"
   ==> "GenerateHelp"
 
 RunTargetOrDefault "All"
