@@ -19,6 +19,9 @@ group Build
   nuget FSharp.Formatting
 
   github fsharp/FAKE modules/Octokit/Octokit.fsx
+  github fsprojects/FSharp.TypeProviders.SDK src/ProvidedTypes.fsi
+  github fsprojects/FSharp.TypeProviders.SDK src/ProvidedTypes.fs
+  github fsprojects/FSharp.TypeProviders.StarterPack src/ProvidedTypesTesting.fs
 
 group Test
   source https://nuget.org/api/v2

@@ -5,8 +5,8 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("ElasticsearchTypeProvider")>]
 [<assembly: AssemblyProductAttribute("ElasticsearchTypeProvider")>]
 [<assembly: AssemblyDescriptionAttribute("Elasticsearch Type Provider")>]
-[<assembly: AssemblyVersionAttribute("1.0.1")>]
-[<assembly: AssemblyFileVersionAttribute("1.0.1")>]
+[<assembly: AssemblyVersionAttribute("0.1.0")>]
+[<assembly: AssemblyFileVersionAttribute("0.1.0")>]
 [<assembly: AssemblyConfigurationAttribute("Release")>]
 do ()
 
@@ -14,6 +14,6 @@ module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyTitle = "ElasticsearchTypeProvider"
     let [<Literal>] AssemblyProduct = "ElasticsearchTypeProvider"
     let [<Literal>] AssemblyDescription = "Elasticsearch Type Provider"
-    let [<Literal>] AssemblyVersion = "1.0.1"
-    let [<Literal>] AssemblyFileVersion = "1.0.1"
+    let [<Literal>] AssemblyVersion = "0.1.0"
+    let [<Literal>] AssemblyFileVersion = "0.1.0"
     let [<Literal>] AssemblyConfiguration = "Release"
