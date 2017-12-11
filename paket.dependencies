@@ -9,6 +9,8 @@ source https://nuget.org/api/v2
 #     nuget FSharp.Core ~> 4.1.0 redirects: force
 
 nuget FSharp.Core ~> 4.0.0.1 redirects: force
+nuget FSharp.Data
+nuget NEST
 
 group Build
   source https://nuget.org/api/v2
