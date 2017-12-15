@@ -59,9 +59,9 @@ The library is available under Public Domain license, which allows modification 
 redistribution for both commercial and non-commercial purposes. For more information see the 
 [License file][license] in the GitHub repository. 
 
-  [content]: https://github.com/fsprojects/ElasticsearchTypeProvider/tree/master/docs/content
-  [gh]: https://github.com/fsprojects/ElasticsearchTypeProvider
-  [issues]: https://github.com/fsprojects/ElasticsearchTypeProvider/issues
-  [readme]: https://github.com/fsprojects/ElasticsearchTypeProvider/blob/master/README.md
-  [license]: https://github.com/fsprojects/ElasticsearchTypeProvider/blob/master/LICENSE.txt
+  [content]: https://github.com/olgarose/ElasticsearchTypeProvider/tree/master/docs/content
+  [gh]: https://github.com/olgarose/ElasticsearchTypeProvider
+  [issues]: https://github.com/olgarose/ElasticsearchTypeProvider/issues
+  [readme]: https://github.com/olgarose/ElasticsearchTypeProvider/blob/master/README.md
+  [license]: https://github.com/olgarose/ElasticsearchTypeProvider/blob/master/LICENSE.txt
 *)
