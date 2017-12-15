@@ -218,7 +218,6 @@ Target "ReleaseDocs" (fun _ ->
     StageAll tempDocsDir
     Git.Commit.Commit tempDocsDir (sprintf "Update generated documentation for version %s" release.NugetVersion)
     Branches.push tempDocsDir
-    CleanDir tempDocsDir
 )
 
 Target "GenerateReferenceDocs" (fun _ ->
@@ -373,6 +372,7 @@ Target "All" DoNothing
 "GenerateHelp"
   ==> "GenerateReferenceDocs"
   ==> "GenerateDocs"
+  ==> "ReleaseDocs"
 
 "GenerateHelpDebug"
   ==> "KeepRunning"
@@ -383,9 +383,5 @@ Target "All" DoNothing
 "BuildPackage"
   ==> "PublishNuget"
   ==> "Release"
-
-"ReleaseDocs"
-  ==> "Build"
-  ==> "GenerateHelp"
 
 RunTargetOrDefault "All"

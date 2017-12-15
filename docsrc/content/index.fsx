@@ -29,7 +29,7 @@ This example demonstrates using a function defined in this sample library.
 #r "ElasticsearchTypeProvider.dll"
 open ElasticsearchTypeProvider
 
-printfn "hello = %i" <| Library.hello 0
+printfn "try some more = %i" <| Library.hello 0
 
 (**
 Some more info
